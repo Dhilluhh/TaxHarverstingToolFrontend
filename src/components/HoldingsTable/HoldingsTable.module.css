@@ -1,0 +1,371 @@
+/* ── Value tooltip (hover to expand compact numbers) ─────────── */
+.valWrap {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.valTooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  pointer-events: none;
+  z-index: 300;
+  font-variant-numeric: tabular-nums;
+}
+
+.valTooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #ffffff;
+}
+
+.valWrap:hover .valTooltip {
+  display: block;
+  animation: tipFadeIn 0.12s ease;
+}
+
+@keyframes tipFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(4px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ── Table Section ───────────────────────────────────────────── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tableTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  transition: color 0.25s;
+}
+
+.holdingsCount {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-badge);
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  transition: background 0.25s, color 0.25s;
+}
+
+/* ── Table Wrapper ───────────────────────────────────────────── */
+.tableWrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  background: var(--bg-table-head);
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+  user-select: none;
+  vertical-align: top;
+  transition: background 0.25s, color 0.25s;
+}
+
+.thStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.thSub {
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  text-transform: none;
+  transition: color 0.25s;
+}
+
+.sortable {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.sortable:hover { color: var(--accent-blue-mid); }
+
+.sortNeutral {
+  opacity: 0.35;
+  margin-left: 4px;
+  font-size: 0.65rem;
+}
+
+.sortActive {
+  color: var(--accent-blue);
+  margin-left: 4px;
+  font-size: 0.65rem;
+}
+
+/* ── Rows ────────────────────────────────────────────────────── */
+.row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.row:hover { background: var(--bg-hover); }
+
+.rowSelected {
+  background: var(--bg-selected) !important;
+  border-bottom: 1px solid var(--border-selected);
+}
+
+.rowSelected:hover { background: var(--bg-selected-hov) !important; }
+
+.td {
+  padding: 0.85rem 1rem;
+  vertical-align: middle;
+}
+
+/* ── Custom Checkbox ─────────────────────────────────────────── */
+.checkboxLabel {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--text-faint);
+  border-radius: 4px;
+  background: transparent;
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.checkbox:checked + .checkmark {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.checkbox:checked + .checkmark::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.checkbox:indeterminate + .checkmark {
+  background: rgba(59,130,246,0.5);
+  border-color: var(--accent-blue);
+}
+
+.checkbox:indeterminate + .checkmark::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+}
+
+/* ── Asset Cell ──────────────────────────────────────────────── */
+.assetCell {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg-elevated);
+  flex-shrink: 0;
+}
+
+.assetInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.coinSymbol {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  transition: color 0.25s;
+}
+
+.coinName {
+  font-size: 0.72rem;
+  color: var(--text-coin-name);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.25s;
+}
+
+/* ── Holdings Cell ───────────────────────────────────────────── */
+.holdingCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.holdingAmount {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.25s;
+}
+
+.holdingAvg {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  transition: color 0.25s;
+}
+
+/* ── Price ───────────────────────────────────────────────────── */
+.price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.25s;
+}
+
+/* ── Gain Cell ───────────────────────────────────────────────── */
+.gainCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.gainAmount {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.pos  { color: var(--accent-green); }
+.neg  { color: var(--accent-red); }
+.zero { color: var(--text-faint); }
+
+.gainBalance {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  transition: color 0.25s;
+}
+
+/* ── Amount to Sell ──────────────────────────────────────────── */
+.amountToSell {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue-lt);
+  font-variant-numeric: tabular-nums;
+  background: rgba(59,130,246,0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(59,130,246,0.25);
+  animation: popIn 0.2s ease;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.amountEmpty {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+/* ── View All Button ─────────────────────────────────────────── */
+.viewAllBtn {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--bg-hover);
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--accent-blue-lt);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.viewAllBtn:hover {
+  background: var(--bg-selected);
+  color: var(--accent-blue-mid);
+}
+
+/* ── Error ───────────────────────────────────────────────────── */
+.error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--accent-red);
+  font-size: 0.875rem;
+  background: rgba(239,68,68,0.06);
+  border-radius: 12px;
+}

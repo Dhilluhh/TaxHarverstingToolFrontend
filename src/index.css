@@ -1,0 +1,203 @@
+/* ── Reset & Base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DARK MODE (default)
+══════════════════════════════════════════════════════════════════ */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg-base:         #080a12;
+  --bg-surface:      #0f1117;
+  --bg-elevated:     #161b27;
+  --bg-hover:        rgba(255,255,255,0.035);
+  --bg-selected:     rgba(59,130,246,0.08);
+  --bg-selected-hov: rgba(59,130,246,0.13);
+  --bg-badge:        rgba(255,255,255,0.06);
+  --bg-table-head:   rgba(255,255,255,0.02);
+  --bg-gradient-1:   rgba(30,58,138,0.18);
+  --bg-gradient-2:   rgba(15,23,42,0.3);
+
+  /* Borders */
+  --border-subtle:   rgba(255,255,255,0.07);
+  --border-card:     rgba(255,255,255,0.08);
+  --border-selected: rgba(59,130,246,0.15);
+  --border-notes:    rgba(59,130,246,0.2);
+  --border-notes-inner: rgba(59,130,246,0.12);
+
+  /* Text */
+  --text-primary:    #f1f5f9;
+  --text-secondary:  #cbd5e1;
+  --text-muted:      rgba(148,163,184,0.7);
+  --text-faint:      rgba(148,163,184,0.55);
+  --text-coin-name:  rgba(148,163,184,0.7);
+
+  /* Accents */
+  --accent-blue:     #3b82f6;
+  --accent-blue-lt:  #60a5fa;
+  --accent-blue-mid: #93c5fd;
+  --accent-green:    #4ade80;
+  --accent-red:      #f87171;
+
+  /* Navbar */
+  --nav-bg:          rgba(10,11,20,0.85);
+  --nav-border:      rgba(255,255,255,0.07);
+  --nav-logo-bg:     rgba(59,130,246,0.10);
+  --nav-logo-border: rgba(59,130,246,0.25);
+  --nav-brand:       #f1f5f9;
+  --nav-link:        rgba(203,213,225,0.75);
+  --nav-link-hover:  #f1f5f9;
+  --nav-link-hov-bg: rgba(255,255,255,0.05);
+
+  /* Cards */
+  --card-bg-pre:     #0f1117;
+  --card-border-pre: rgba(255,255,255,0.08);
+  --card-bg-post:    linear-gradient(135deg,#3C9AFF,#0066FE);
+  --card-label:      rgba(148,163,184,0.7);
+  --card-value:      #f1f5f9;
+  --card-heading:    #f1f5f9;
+  --card-thead:      rgba(148,163,184,0.6);
+
+  /* Notes banner */
+  --notes-bg:        rgba(30,58,138,0.25);
+
+  /* Scrollbar */
+  --scroll-thumb:    rgba(255,255,255,0.12);
+  --scroll-thumb-hov:rgba(255,255,255,0.20);
+
+  /* Toggle button */
+  --toggle-bg:       rgba(255,255,255,0.08);
+  --toggle-border:   rgba(255,255,255,0.12);
+  --toggle-color:    #f1f5f9;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LIGHT MODE — override every token
+══════════════════════════════════════════════════════════════════ */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-base:         #f1f5f9;
+  --bg-surface:      #ffffff;
+  --bg-elevated:     #f8fafc;
+  --bg-hover:        rgba(0,0,0,0.025);
+  --bg-selected:     #eff6ff;
+  --bg-selected-hov: #dbeafe;
+  --bg-badge:        rgba(0,82,254,0.08);
+  --bg-table-head:   #f8fafc;
+  --bg-gradient-1:   rgba(59,130,246,0.06);
+  --bg-gradient-2:   rgba(100,116,139,0.04);
+
+  --border-subtle:   #e2e8f0;
+  --border-card:     #e2e8f0;
+  --border-selected: #bfdbfe;
+  --border-notes:    rgba(0,82,254,0.2);
+  --border-notes-inner: rgba(0,82,254,0.12);
+
+  --text-primary:    #0f172a;
+  --text-secondary:  #334155;
+  --text-muted:      #64748b;
+  --text-faint:      #94a3b8;
+  --text-coin-name:  #64748b;
+
+  --accent-blue:     #0052fe;
+  --accent-blue-lt:  #2563eb;
+  --accent-blue-mid: #3b82f6;
+  --accent-green:    #16a34a;
+  --accent-red:      #dc2626;
+
+  --nav-bg:          rgba(255,255,255,0.92);
+  --nav-border:      #e2e8f0;
+  --nav-logo-bg:     rgba(0,82,254,0.08);
+  --nav-logo-border: rgba(0,82,254,0.2);
+  --nav-brand:       #0f172a;
+  --nav-link:        #475569;
+  --nav-link-hover:  #0f172a;
+  --nav-link-hov-bg: rgba(0,0,0,0.04);
+
+  --card-bg-pre:     #ffffff;
+  --card-border-pre: #e2e8f0;
+  --card-bg-post:    linear-gradient(135deg,#3C9AFF,#0066FE);
+  --card-label:      #64748b;
+  --card-value:      #0f172a;
+  --card-heading:    #0f172a;
+  --card-thead:      #64748b;
+
+  --notes-bg:        rgba(0,82,254,0.04);
+
+  --scroll-thumb:    rgba(0,0,0,0.15);
+  --scroll-thumb-hov:rgba(0,0,0,0.25);
+
+  --toggle-bg:       rgba(0,0,0,0.06);
+  --toggle-border:   rgba(0,0,0,0.10);
+  --toggle-color:    #0f172a;
+}
+
+/* ── Global base ──────────────────────────────────────────────── */
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.5;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Subtle animated gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 10%, var(--bg-gradient-1) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, var(--bg-gradient-2) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.25s ease;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── Scrollbar ────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: var(--bg-base); }
+::-webkit-scrollbar-thumb  { background: var(--scroll-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hov); }
+
+/* ── Focus visible ────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Selection ────────────────────────────────────────────────── */
+::selection {
+  background: rgba(59,130,246,0.3);
+  color: #fff;
+}

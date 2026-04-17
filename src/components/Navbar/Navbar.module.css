@@ -1,0 +1,114 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--nav-border);
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--nav-logo-bg);
+  border: 1px solid var(--nav-logo-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.brandName {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--nav-brand);
+  letter-spacing: -0.03em;
+  transition: color 0.25s;
+}
+
+.brandX {
+  color: var(--accent-blue);
+}
+
+/* Right side — nav links + toggle */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--nav-link);
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+.navLink:hover {
+  color: var(--nav-link-hover);
+  background: var(--nav-link-hov-bg);
+}
+
+/* ── Theme Toggle Button ──────────────────────────────────────── */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.38rem 0.75rem;
+  background: var(--toggle-bg);
+  border: 1px solid var(--toggle-border);
+  border-radius: 8px;
+  color: var(--toggle-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.themeToggle:hover {
+  background: var(--bg-hover);
+  transform: scale(1.04);
+}
+
+.themeToggle:active {
+  transform: scale(0.97);
+}
+
+.toggleLabel {
+  display: inline;
+}
+
+@media (max-width: 480px) {
+  .toggleLabel { display: none; }
+}

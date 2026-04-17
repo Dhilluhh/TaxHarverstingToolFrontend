@@ -1,0 +1,172 @@
+.card {
+  border-radius: 16px;
+  padding: 1.75rem;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* ── Pre-Harvesting ──────────────────────────────────────────── */
+.preBg {
+  background: var(--card-bg-pre);
+  border: 1px solid var(--card-border-pre);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  color: var(--text-primary);
+  transition: background 0.25s, border-color 0.25s;
+}
+
+/* ── After Harvesting (always blue — same in both modes) ─────── */
+.postBg {
+  background: linear-gradient(135deg, #1a3a6e 0%, #1e4d9e 50%, #1a3a6e 100%);
+  border: 1px solid rgba(99,179,237,0.25);
+  box-shadow: 0 4px 32px rgba(30,77,158,0.35);
+  color: #e2e8f0;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--card-heading);
+  margin: 0;
+  letter-spacing: -0.01em;
+  transition: color 0.25s;
+}
+
+/* Post card always white title */
+.postBg .title { color: #f1f5f9; }
+
+.savingsBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(34,197,94,0.15);
+  border: 1px solid rgba(34,197,94,0.3);
+  border-radius: 100px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--accent-green);
+  animation: fadeSlideIn 0.4s ease;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.savingsIcon { font-size: 0.9rem; }
+
+/* ── Sections ───────────────────────────────────────────────── */
+.sections {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--card-thead);
+  margin: 0;
+  transition: color 0.25s;
+}
+
+.postBg .sectionTitle { color: rgba(203,213,225,0.7); }
+
+.separator {
+  width: 1px;
+  background: var(--border-subtle);
+  align-self: stretch;
+}
+
+/* ── Gain Rows ──────────────────────────────────────────────── */
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.gainRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gainLabel {
+  font-size: 0.8rem;
+  color: var(--card-label);
+  white-space: nowrap;
+  transition: color 0.25s;
+}
+
+.postBg .gainLabel { color: rgba(203,213,225,0.75); }
+
+.gainValue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--card-value);
+  transition: color 0.25s;
+}
+
+.postBg .gainValue { color: #f1f5f9; }
+
+.negative { color: var(--accent-red) !important; }
+
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0.15rem 0;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.realisedLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.25s;
+}
+
+.postBg .realisedLabel { color: rgba(203,213,225,0.9); }
+
+.realisedValue {
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--card-value);
+  transition: color 0.25s;
+}
+
+.postBg .realisedValue { color: #f1f5f9; }
