@@ -1,8 +1,7 @@
-# KoinX — Tax Loss Harvesting Tool
+# Tax Loss Harvesting Tool
 
 A responsive Tax Loss Harvesting interface built with React + TypeScript + Vite, matching the KoinX design system.
 
-![App Screenshot](./screenshots/app.png)
 
 ---
 
@@ -143,15 +142,4 @@ savings = preRealisedGain - postRealisedGain   (shown only if > 0)
 
 ## 🚢 Deployment
 
-The app can be deployed to **Vercel** or **Netlify** in one click:
-
-### Vercel
-```bash
-npx vercel
-```
-
-### Netlify
-```bash
-npm run build
-# Drag and drop the `dist/` folder to netlify.com/drop
-```
+The app was deployed on Vercel
