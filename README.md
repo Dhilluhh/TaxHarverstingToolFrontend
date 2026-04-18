@@ -5,6 +5,13 @@ A responsive Tax Loss Harvesting interface built with React + TypeScript + Vite,
 
 ---
 
+##Screenshots
+
+#Dark mode
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/13d0a9a4-0d72-47b1-9b38-4981ee4469c5" />
+
+
 ## ✨ Features
 
 - **Pre-Harvesting Card** — Displays capital gains (STCG & LTCG) from the Capital Gains API: profits, losses, net gains, and realised capital gains.
