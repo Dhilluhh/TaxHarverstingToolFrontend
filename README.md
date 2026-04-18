@@ -52,7 +52,7 @@ Full list of assets with scrolling and comprehensive data view.
 </details>
 
 <details>
-<summary><b>6. Selection of assets to sell and the gain calculation</b></summary>
+<summary><b>7. Selection of assets to sell and the gain calculation</b></summary>
 
 Demonstrates the ability to sort by columns and select all assets, Application also handles the gain or saving.
 <img width="1920" height="1020" alt="Edge Cases" src="https://github.com/user-attachments/assets/09cd0cb9-84a3-4f64-9403-5c646b845318" />
@@ -98,7 +98,7 @@ Testing the display limit with multiple assets expanded.
 </details>
 
 <details>
-<summary><b>7. Selection of assets to sell and the gain calculation and Tooltip for prices</b></summary>
+<summary><b>6. Selection of assets to sell and the gain calculation and Tooltip for prices</b></summary>
 
 Demonstrates the ability to sort by columns and select all assets,display the prices on a tooltip, Application also handles the gain or saving.
 <img width="1920" height="1020" alt="State Handling Light Mode" src="https://github.com/user-attachments/assets/6f21b3b0-f11f-4793-a1c5-1b7a1a456b88" />
