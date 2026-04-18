@@ -5,39 +5,104 @@ A responsive Tax Loss Harvesting interface built with React + TypeScript + Vite,
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-# Dark mode
+### 🌙 Dark Mode
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c033a076-1a54-4c9c-9c9b-25ed3b90da13" />
+<details>
+<summary><b>1. Dashboard Overview (Pre-Harvesting)</b></summary>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/973db1f9-3daf-4e96-a88f-c4b990287f03" />
+Shows the initial load state with Pre-Harvesting and empty After-Harvesting calculations.
+<img width="1920" height="1020" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/c033a076-1a54-4c9c-9c9b-25ed3b90da13" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c1331c50-bf4f-4fc8-aaa6-1e1d5cec1ad2" />
+<details>
+<summary><b>2. Holdings Table & Asset Selection</b></summary>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/660d116c-ff23-4fca-9bf3-092982b2c5ee" />
+Displays the holdings table where users can select assets to harvest.
+<img width="1920" height="1020" alt="Holdings Table" src="https://github.com/user-attachments/assets/973db1f9-3daf-4e96-a88f-c4b990287f03" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2faf5944-8e33-4a61-8bfc-512db892026a" />
+<details>
+<summary><b>3. Post-Harvesting Gains Calculation</b></summary>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c7bf4139-f7bc-40aa-87bb-de2697678f45" />
+Shows updated values in the After-Harvesting card based on user selection.
+<img width="1920" height="1020" alt="Post-Harvesting" src="https://github.com/user-attachments/assets/c1331c50-bf4f-4fc8-aaa6-1e1d5cec1ad2" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/09cd0cb9-84a3-4f64-9403-5c646b845318" />
+<details>
+<summary><b>4. Tax Savings Banner Active</b></summary>
 
-# Light mode
+Highlights the expected tax savings achieved post-harvesting.
+<img width="1920" height="1020" alt="Tax Savings" src="https://github.com/user-attachments/assets/660d116c-ff23-4fca-9bf3-092982b2c5ee" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/8e335ca1-fc31-4828-a970-e217cd9bff09" />
+<details>
+<summary><b>5. Expanded Table View (Show All)</b></summary>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/9864fe4a-fefd-44a8-ba46-3d35a6e3f53e" />
+Full list of assets with scrolling and comprehensive data view.
+<img width="1920" height="1020" alt="Expanded View" src="https://github.com/user-attachments/assets/2faf5944-8e33-4a61-8bfc-512db892026a" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/affb3f15-4776-4725-8717-c2bc0f8b7d2b" />
+<details>
+<summary><b>6. Multi-Selection & Sorting</b></summary>
 
+Demonstrates the ability to sort by columns and select all assets.
+<img width="1920" height="1020" alt="Multi-Selection" src="https://github.com/user-attachments/assets/c7bf4139-f7bc-40aa-87bb-de2697678f45" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fa2f2a25-72f6-4736-b1bd-6fbb050cc3f6" />
+<details>
+<summary><b>7. Empty & Edge Case Handlings</b></summary>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/24b665ed-59ef-435a-8f7b-4018469ef7fb" />
+Application handling edge-cases such as very small token amounts and zero-gain assets.
+<img width="1920" height="1020" alt="Edge Cases" src="https://github.com/user-attachments/assets/09cd0cb9-84a3-4f64-9403-5c646b845318" />
+</details>
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/6f21b3b0-f11f-4793-a1c5-1b7a1a456b88" />
+<br/>
 
+### ☀️ Light Mode
+
+<details>
+<summary><b>1. Dashboard Overview (Pre-Harvesting)</b></summary>
+
+Initial load state with bright, easily readable text and clean layout.
+<img width="1920" height="1020" alt="Overview Light Mode" src="https://github.com/user-attachments/assets/8e335ca1-fc31-4828-a970-e217cd9bff09" />
+</details>
+
+<details>
+<summary><b>2. Holdings Table & Asset Selection</b></summary>
+
+Clean and distinct highlighting for selected assets in light mode.
+<img width="1920" height="1020" alt="Table Light Mode" src="https://github.com/user-attachments/assets/9864fe4a-fefd-44a8-ba46-3d35a6e3f53e" />
+</details>
+
+<details>
+<summary><b>3. Post-Harvesting Gains Calculation</b></summary>
+
+Real-time calculation updates for After Harvesting values.
+<img width="1920" height="1020" alt="Post-Harvesting Light Mode" src="https://github.com/user-attachments/assets/affb3f15-4776-4725-8717-c2bc0f8b7d2b" />
+</details>
+
+<details>
+<summary><b>4. Tax Savings Banner Active</b></summary>
+
+Eye-catching savings banner prominently displaying dynamically.
+<img width="1920" height="1020" alt="Tax Savings Light Mode" src="https://github.com/user-attachments/assets/fa2f2a25-72f6-4736-b1bd-6fbb050cc3f6" />
+</details>
+
+<details>
+<summary><b>5. Expanded Table View (Show All)</b></summary>
+
+Testing the display limit with multiple assets expanded.
+<img width="1920" height="1020" alt="Expanded List Light Mode" src="https://github.com/user-attachments/assets/24b665ed-59ef-435a-8f7b-4018469ef7fb" />
+</details>
+
+<details>
+<summary><b>6. Empty/Loading State Dashboard</b></summary>
+
+Displays the UI behavior while interacting with different selection states.
+<img width="1920" height="1020" alt="State Handling Light Mode" src="https://github.com/user-attachments/assets/6f21b3b0-f11f-4793-a1c5-1b7a1a456b88" />
+</details>
 
 --- 
 
