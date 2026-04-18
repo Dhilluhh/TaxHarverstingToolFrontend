@@ -17,11 +17,26 @@ A responsive Tax Loss Harvesting interface built with React + TypeScript + Vite,
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/660d116c-ff23-4fca-9bf3-092982b2c5ee" />
 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2faf5944-8e33-4a61-8bfc-512db892026a" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c7bf4139-f7bc-40aa-87bb-de2697678f45" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/09cd0cb9-84a3-4f64-9403-5c646b845318" />
+
+# Light mode
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/8e335ca1-fc31-4828-a970-e217cd9bff09" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/9864fe4a-fefd-44a8-ba46-3d35a6e3f53e" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fa2f2a25-72f6-4736-b1bd-6fbb050cc3f6" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/24b665ed-59ef-435a-8f7b-4018469ef7fb" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/6f21b3b0-f11f-4793-a1c5-1b7a1a456b88" />
 
 
-
-
-
+--- 
 
 
 ## ✨ Features
