@@ -5,11 +5,23 @@ A responsive Tax Loss Harvesting interface built with React + TypeScript + Vite,
 
 ---
 
-##Screenshots
+## Screenshots
 
-#Dark mode
+# Dark mode
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/13d0a9a4-0d72-47b1-9b38-4981ee4469c5" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c033a076-1a54-4c9c-9c9b-25ed3b90da13" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/973db1f9-3daf-4e96-a88f-c4b990287f03" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c1331c50-bf4f-4fc8-aaa6-1e1d5cec1ad2" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/660d116c-ff23-4fca-9bf3-092982b2c5ee" />
+
+
+
+
+
+
 
 
 ## ✨ Features
