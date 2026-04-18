@@ -17,44 +17,44 @@ Shows the initial load state with Pre-Harvesting and empty After-Harvesting calc
 </details>
 
 <details>
-<summary><b>2. Holdings Table & Asset Selection</b></summary>
+<summary><b>2. How it works Tooltip</b></summary>
 
-Displays the holdings table where users can select assets to harvest.
+Demonstrated the working of the How it works tooltip.
 <img width="1920" height="1020" alt="Holdings Table" src="https://github.com/user-attachments/assets/973db1f9-3daf-4e96-a88f-c4b990287f03" />
 </details>
 
 <details>
-<summary><b>3. Post-Harvesting Gains Calculation</b></summary>
+<summary><b>3. Important Notes and Disclaimers Dropdown</b></summary>
 
-Shows updated values in the After-Harvesting card based on user selection.
+Shows the working of the Important Notes and Disclaimers Dropdown.
 <img width="1920" height="1020" alt="Post-Harvesting" src="https://github.com/user-attachments/assets/c1331c50-bf4f-4fc8-aaa6-1e1d5cec1ad2" />
 </details>
 
 <details>
-<summary><b>4. Tax Savings Banner Active</b></summary>
+<summary><b>4. Tooltip for prices</b></summary>
 
-Highlights the expected tax savings achieved post-harvesting.
+Showed the working of the tooltip for prices.
 <img width="1920" height="1020" alt="Tax Savings" src="https://github.com/user-attachments/assets/660d116c-ff23-4fca-9bf3-092982b2c5ee" />
 </details>
 
 <details>
-<summary><b>5. Expanded Table View (Show All)</b></summary>
+<summary><b>5. Holdings table basic view </b></summary>
 
-Full list of assets with scrolling and comprehensive data view.
+Shows the basic holdings table initally with 5 assets which expands on clicking the show all as demonstrated below.
 <img width="1920" height="1020" alt="Expanded View" src="https://github.com/user-attachments/assets/2faf5944-8e33-4a61-8bfc-512db892026a" />
 </details>
 
 <details>
-<summary><b>6. Multi-Selection & Sorting</b></summary>
+<summary><b>6.Expanded Table View(Show All)</b></summary>
 
-Demonstrates the ability to sort by columns and select all assets.
+Full list of assets with scrolling and comprehensive data view.
 <img width="1920" height="1020" alt="Multi-Selection" src="https://github.com/user-attachments/assets/c7bf4139-f7bc-40aa-87bb-de2697678f45" />
 </details>
 
 <details>
-<summary><b>7. Empty & Edge Case Handlings</b></summary>
+<summary><b>7. Selection of assets to sell and the gain calculation</b></summary>
 
-Application handling edge-cases such as very small token amounts and zero-gain assets.
+Demonstrates the ability to sort by columns and select all assets, Application also handles the gain or saving.
 <img width="1920" height="1020" alt="Edge Cases" src="https://github.com/user-attachments/assets/09cd0cb9-84a3-4f64-9403-5c646b845318" />
 </details>
 
@@ -70,23 +70,23 @@ Initial load state with bright, easily readable text and clean layout.
 </details>
 
 <details>
-<summary><b>2. Holdings Table & Asset Selection</b></summary>
+<summary><b>2. How it works Tooltip</b></summary>
 
-Clean and distinct highlighting for selected assets in light mode.
+Demonstrated the working of the How it works tooltip.
 <img width="1920" height="1020" alt="Table Light Mode" src="https://github.com/user-attachments/assets/9864fe4a-fefd-44a8-ba46-3d35a6e3f53e" />
 </details>
 
 <details>
-<summary><b>3. Post-Harvesting Gains Calculation</b></summary>
+<summary><b>3. Important Notes and Disclaimers Dropdown</b></summary>
 
-Real-time calculation updates for After Harvesting values.
+Shows the working of the Important Notes and Disclaimers Dropdown.
 <img width="1920" height="1020" alt="Post-Harvesting Light Mode" src="https://github.com/user-attachments/assets/affb3f15-4776-4725-8717-c2bc0f8b7d2b" />
 </details>
 
 <details>
-<summary><b>4. Tax Savings Banner Active</b></summary>
+<summary><b>4. Holdings table basic view Active</b></summary>
 
-Eye-catching savings banner prominently displaying dynamically.
+Shows the basic holdings table initally with 5 assets which expands on clicking the show all as demonstrated below.
 <img width="1920" height="1020" alt="Tax Savings Light Mode" src="https://github.com/user-attachments/assets/fa2f2a25-72f6-4736-b1bd-6fbb050cc3f6" />
 </details>
 
@@ -98,9 +98,9 @@ Testing the display limit with multiple assets expanded.
 </details>
 
 <details>
-<summary><b>6. Empty/Loading State Dashboard</b></summary>
+<summary><b>7. Selection of assets to sell and the gain calculation and Tooltip for prices</b></summary>
 
-Displays the UI behavior while interacting with different selection states.
+Demonstrates the ability to sort by columns and select all assets,display the prices on a tooltip, Application also handles the gain or saving.
 <img width="1920" height="1020" alt="State Handling Light Mode" src="https://github.com/user-attachments/assets/6f21b3b0-f11f-4793-a1c5-1b7a1a456b88" />
 </details>
 
